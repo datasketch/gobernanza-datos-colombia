@@ -13,7 +13,16 @@ module.exports = {
         'IBM-Plex-Sans': ['IBM Plex Sans', 'sans-serif']
       },
       backgroundImage: {},
-      colors: {},
+      colors: {
+        purple: '#ED58FC',
+        blue: '#5141FB',
+        green: '#35C4B9',
+        orange: '#FEA829',
+        pink: '#DA1C95',
+        'blue-dark': '#272C57',
+        black: '#222526',
+        white: '#FAFAFA'
+      },
       screens: {
         sm: '640px',
         // => @media (min-width: 640px) { ... }
@@ -27,8 +36,8 @@ module.exports = {
         xl: '1366px',
         // => @media (min-width: 1366px) { ... }
 
-        '2xl': '1536px'
-        // => @media (min-width: 1536px) { ... }
+        '2xl': '1920px'
+        // => @media (min-width: 1920px) { ... }
       }
     }
   },
