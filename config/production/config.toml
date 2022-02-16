@@ -1,5 +1,5 @@
-baseURL = '/'
+baseURL = '/karisma/gobernanza-datos/'
 defaultContentLanguage = "es"
 languageCode = 'es'
 taxonomies = []
-title = 'Gobernanza Datos Colombia'
+title = 'Gobernanza de datos en Colombia'

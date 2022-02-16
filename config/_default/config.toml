@@ -2,4 +2,4 @@ baseURL = '/'
 defaultContentLanguage = "es"
 languageCode = 'es'
 taxonomies = []
-title = 'Gobernanza Datos Colombia'
+title = 'Gobernanza de datos en Colombia'

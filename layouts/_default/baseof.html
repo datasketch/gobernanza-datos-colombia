@@ -4,7 +4,7 @@
 <head>
     {{ partial "head.html" . }}
     {{ block "head" . }}{{ end }}
-    <title>{{ .Title | humanize }}</title>
+    <title>{{ .Site.Title }}</title>
 </head>
 
 <body class="font-IBM-Plex-Sans max-w-screen-2xl text-black bg-white">

@@ -2,7 +2,7 @@
 <div class="bg-black pt-24 lg:pt-36 xl:pt-40" style="height: 950px;">
     <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div class="lg:w-5/12">
-            <img class="w-6/12 lg:w-full" srcset="/images/gobernanza.png 1x, /images/gobernanza@2x.png 2x" alt="gobernanza">
+            <img class="w-6/12 lg:w-full" src='{{ "images/gobernanza@2x.png 2x" | absURL }}' alt="gobernanza">
         </div>
         <div class="w-10/12 mx-auto lg:w-6/12">
             <div class="max-w-xl flex flex-col space-y-6">
@@ -22,7 +22,7 @@
 </div>
 <div class="pt-12 lg:pt-16 xl:pt-20 mb-12 lg:mb-16 xl:mb-20 bg-white mx-auto w-10/12 relative z-10 -mt-52 shadow">
     <div class="text-center">
-        <img class="mx-auto" srcset="/images/articulos.png 1x, /images/articulos@2x.png 2x" alt="articulos">
+        <img class="mx-auto" src='{{ "images/articulos@2x.png" | absURL }}' alt="articulos">
         <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mt-2">Artículos</h2>
     </div>
     <div class="mx-auto w-10/12 mt-16">
@@ -79,7 +79,7 @@
                     <div class="py-5">
                         <span class="block italic font-medium xl:text-lg">Datasketch</span>
                         <h3 class="text-base lg:text-lg xl:text-xl font-bold my-2">
-                            Gobernanza de datos en Colombia: Seguimiento al Plan Nacional de Infraestructura de Datos
+                            Reflexiones para una gobernanza de datos democrática en Colombia
                         </h3>
                         <span class="block italic font-medium xl:text-lg">Julio 28 del 2021</span>
                     </div>
@@ -95,59 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="articulos__panel articulos__panel--active">
-        <div class="mx-auto max-w-xl w-11/12 lg:w-auto">
-            <p class="text-white font-medium text-base lg:text-lg xl:text-xl">
-                En esta nueva entrega, la Fundación Karisma, en alianza con Datasketch y con el apoyo del proyecto de gobernanza de datos de la Iniciativa Latinoamericana por los Datos Abiertos -ILDA-, analizan el borrador del Plan Nacional de Infraestructura de Datos -PNID- y el Modelo de Gobernanza de la Infraestructura de Datos para el Desarrollo de Tecnologías Emergentes en el cual está fundamentado.
-            </p>
-            <div class="text-center mt-10">
-                <a href="https://web.karisma.org.co/el-pnid-del-gobierno-a-la-gobernanza-de-datos/" target="_blank" class="py-2 font-bold border-2 border-orange text-orange inline-block" style="width: 173px;">
-                    Artículo completo
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="articulos__panel">
-        <div class="mx-auto max-w-xl w-11/12 lg:w-auto">
-            <p class="text-white font-medium text-base lg:text-lg xl:text-xl">
-                En el marco de la alianza entre la Fundación Karisma, Datasketch y con el apoyo del proyecto de gobernanza de datos de la Iniciativa Latinoamericana por los Datos Abiertos -ILDA-, continúan los comentarios a los diferentes componentes del Plan Nacional de Infraestructura de Datos -PNID-. En particular, en este documento se analiza la propuesta del Data Marketplace.
-            </p>
-            <div class="text-center mt-10">
-                <a href="https://web.karisma.org.co/data-marketplace-repositorio-de-datos-acuerdos-para-compartir-datos-o-espacio-para-comprar-y-vender-datos/" target="_blank" class="py-2 font-bold border-2 border-orange text-orange inline-block" style="width: 173px;">
-                    Artículo completo
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="articulos__panel">
-        <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-20">
-                <div>
-                    <p class="text-base lg:text-lg xl:text-xl font-medium text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam….
-                    </p>
-                    <a class="inline-block text-orange font-bold text-base border-b border-orange mt-2" href="#">Leer más</a>
-                </div>
-                <div>
-                    <p class="text-base lg:text-lg xl:text-xl font-medium text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam….
-                    </p>
-                    <a class="inline-block text-orange font-bold text-base border-b border-orange mt-2" href="#">Leer más</a>
-                </div>
-                <div>
-                    <p class="text-base lg:text-lg xl:text-xl font-medium text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam….
-                    </p>
-                    <a class="inline-block text-orange font-bold text-base border-b border-orange mt-2" href="#">Leer más</a>
-                </div>
-            </div>
-            <div class="text-center mt-10">
-                <a href="#" class="py-2 font-bold border-2 border-orange text-orange inline-block" style="width: 173px;">
-                    Artículo completo
-                </a>
-            </div>
-        </div>
-    </div>
+    {{ partial "articulos-panel.html" . }}
     <div class="pt-12 lg:pt-16 xl:pt-20">
         <div class="text-center mx-auto max-w-xl w-10/12 lg:w-auto">
             <img class="mx-auto" srcset="/images/explora-los-datos.png 1x, /images/explora-los-datos@2x.png 2x" alt="articulos">
@@ -157,7 +105,7 @@
             </p>
         </div>
         <div class="mt-12">
-            <img src="/images/app.svg" alt="app">
+            <iframe class="airtable-embed" src="https://airtable.com/embed/shrFKf6G0Hk0xQ7VJ?backgroundColor=purple&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
         </div>
     </div>
 </div>
