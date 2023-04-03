@@ -1,4 +1,5 @@
-baseURL = '/karisma/gobernanza-datos/'
+baseURL = 'https://datasketch.co/karisma/gobernanza-datos/'
+publishDir = 'public/karisma/gobernanza-datos'
 defaultContentLanguage = "es"
 languageCode = 'es'
 taxonomies = []
